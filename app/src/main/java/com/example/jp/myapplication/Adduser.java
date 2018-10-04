@@ -8,7 +8,7 @@ public class Adduser {
     {
 
     }
-
+//fghdf
     public Adduser(String fullname, String email, String password) {
         this.fullname = fullname;
         Email = email;
