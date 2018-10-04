@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <EditText
+        android:id="@+id/BookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Bookname"
+        android:inputType="textPersonName"
+        android:textColor="#c0c0c0"
+        app:layout_constraintBottom_toTopOf="@+id/AuthorName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <EditText
+        android:id="@+id/AuthorName"
+        android:textColor="#c0c0c0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="AuthorName"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Edition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BookName" />
+
+    <EditText
+        android:id="@+id/Edition"
+        android:textColor="#c0c0c0"
+        android:layout_width="217dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint=" Edition"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Publisher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AuthorName" />
+
+    <EditText
+        android:id="@+id/Publisher"
+        android:textColor="#c0c0c0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint=" Publisher"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/Request"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edition" />
+
+    <Button
+        android:id="@+id/Request"
+        android:layout_width="186dp"
+        android:layout_height="43dp"
+        android:background="@drawable/bttn"
+        android:text="SUBMIT"
+        android:textColor="#c0c0c0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Publisher" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="85dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="301dp" />
+</android.support.constraint.ConstraintLayout>

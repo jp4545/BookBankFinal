@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">Book Bank</string>
+    <string name="button">Button</string>
+    <string name="user_name">User Name</string>
+    <string name="signup">Signup</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="admin">ADMIN</string>
+    <string name="admin1">Admin</string>
+    <string name="password1">Password</string>
+    <string name="submit">Submit</string>
+    <string name="choose_file">Choose File</string>
+    <string name="no_file_is_selected">No file is selected</string>
+    <string name="upload">Upload</string>
+    <string name="notesname">Notesname</string>
+    <string name="name">Name</string>
+    <string-array name="semester">
+        <item>--select the semester--</item>
+        <item>sem1</item>
+        <item>sem2</item>
+        <item>sem3</item>
+        <item>sem4</item>
+        <item>sem5</item>
+        <item>sem6</item>
+        <item>sem7</item>
+        <item>sem8</item>
+    </string-array>
+    <string-array name="sem1">
+        <item>--select the subject--</item>
+        <item>a</item>
+        <item>b</item>
+    </string-array>
+    <string-array name="sem2">
+        <item>--select the subject--</item>
+        <item>c</item>
+        <item>d</item>
+    </string-array>
+    <string-array name="sem3">
+        <item>--select the subject--</item>
+        <item>e</item>
+        <item>f</item>
+    </string-array>
+    <string-array name="sem4">
+        <item>--select the subject--</item>
+        <item>g</item>
+        <item>h</item>
+    </string-array>
+    <string-array name="sem5">
+        <item>--select the subject--</item>
+        <item>Computer Forensics</item>
+        <item>Mobile Application</item>
+        <item>Computer Networks</item>
+        <item>IOT</item>
+        <item>Unix Internals</item>
+        <item>Compiler Engineering</item>
+        <item>Printing Technology</item>
+        <item>Embedded Systems</item>
+        <item>Industrial Engineering</item>
+
+    </string-array>
+    <string-array name="sem6">
+        <item>--select the subject--</item>
+        <item>k</item>
+        <item>l</item>
+    </string-array>
+    <string-array name="sem7">
+        <item>--select the subject--</item>
+        <item>m</item>
+        <item>n</item>
+    </string-array>
+    <string-array name="sem8">
+        <item>--select the subject--</item>
+        <item>o</item>
+        <item>p</item>
+    </string-array>
+    <string name="title_activity_pdf__viewer">Pdf_Viewer</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="Open">Open Drawer </string>
+    <string name="Close">Close Drawer </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

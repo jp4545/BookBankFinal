@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".NotesUpload">
+
+    <EditText
+        android:id="@+id/Notification"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginBottom="300dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#c0c0c0"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/uPloadnOtes"
+        android:layout_width="227dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bttn"
+        android:text="UPLOAD"
+        android:textColor="#c0c0c0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Notification" />
+
+    <Button
+        android:id="@+id/UploadnOtes"
+        android:layout_width="225dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bttn"
+        android:text="CHOOSE FILE"
+        android:textColor="#c0c0c0"
+        app:layout_constraintBottom_toTopOf="@+id/select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="213dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:text="No file is selected"
+        android:textColor="#c0c0c0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".HomePage">
+
+    <Button
+        android:id="@+id/ChooseFile"
+        android:layout_width="248dp"
+        android:layout_height="45dp"
+        android:layout_alignEnd="@+id/UploadFile"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/bttn"
+        android:text="@string/choose_file"
+        android:textColor="#c0c0c0" />
+
+    <EditText
+        android:id="@+id/Notification"
+        android:layout_width="187dp"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="330dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:hint=""
+        android:textColor="#c0c0c0"
+        android:textColorHint="#808080" />
+
+    <Button
+        android:id="@+id/UploadFile"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
+        android:textColor="#c0c0c0"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/bttn"
+        android:text="@string/upload" />
+
+    <Spinner
+        android:id="@+id/sem"
+        android:layout_width="337dp"
+        android:layout_height="44dp"
+        android:layout_above="@+id/sub"
+        android:layout_alignStart="@+id/sub"
+        android:layout_alignLeft="@+id/sub"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginBottom="53dp"
+        android:background="@drawable/gradient1" />
+
+    <Spinner
+        android:id="@+id/sub"
+        android:layout_width="337dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="169dp"
+        android:background="@drawable/gradient1" />
+
+    <TextView
+        android:id="@+id/select1"
+        android:layout_width="189dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textColor="#c0c0c0"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="154dp"
+        android:text="No file is selected"
+        android:textSize="15dp"/>
+
+</RelativeLayout>

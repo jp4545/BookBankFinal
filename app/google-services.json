@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "932321743606",
+    "firebase_url": "https://bookbank-3c3f9.firebaseio.com",
+    "project_id": "bookbank-3c3f9",
+    "storage_bucket": "bookbank-3c3f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932321743606:android:ca9ef9cf6ed5b3f1",
+        "android_client_info": {
+          "package_name": "com.example.jp.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932321743606-dp8759kq4m94n23rsb7dcbd55mdqf8oj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jp.myapplication",
+            "certificate_hash": "86e4fd65aecb5eca8bad8b7a087db6b5f5bfb005"
+          }
+        },
+        {
+          "client_id": "932321743606-ckg1nm05v8savhc7ufqvqpu3vc69sfgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQftq8nuUjIbrIadMAnAs7lt4ibsVoKAQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932321743606-ckg1nm05v8savhc7ufqvqpu3vc69sfgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

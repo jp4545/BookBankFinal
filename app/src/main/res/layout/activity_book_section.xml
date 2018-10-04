@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:padding="2sp"
+    tools:context=".BookSection">
+
+    <Spinner
+        android:id="@+id/sub"
+        android:layout_width="315dp"
+        android:layout_height="56dp"
+        android:background="@drawable/gradient1"
+        app:layout_constraintBottom_toTopOf="@+id/Req"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/barrier2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sem"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/sem"
+        android:layout_width="313dp"
+        android:layout_height="55dp"
+        android:background="@drawable/gradient1"
+        app:layout_constraintBottom_toTopOf="@+id/sub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/barrier2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signout"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Contribute"
+        android:layout_width="144dp"
+        android:layout_height="46dp"
+        android:background="@drawable/bttn"
+        android:text="CONTRIBUTE"
+        android:textColor="#c0c0c0"
+        app:layout_constraintBottom_toTopOf="@+id/barrier3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/barrier2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Req"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <Button
+        android:id="@+id/signout"
+        android:layout_width="62dp"
+        android:layout_height="51dp"
+        android:background="#D00000"
+        android:text="SIGNOUT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Req"
+        android:layout_width="144dp"
+        android:layout_height="46dp"
+        android:background="@drawable/bttn"
+        android:text="REQUEST"
+        android:textColor="#c0c0c0"
+        app:layout_constraintBottom_toTopOf="@+id/Contribute"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/barrier2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sub" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="380dp" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+</android.support.constraint.ConstraintLayout>

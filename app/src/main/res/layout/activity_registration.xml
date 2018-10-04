@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#fff">
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:layout_marginBottom="90dp">
+            <!-- Logo Start-->
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+        <!-- Footer Start -->
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/gradient"
+            android:orientation="horizontal"></LinearLayout>
+        <!-- Footer Ends -->
+
+        <!-- Registration Form -->
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/gradient">
+            <!-- Full Name Label -->
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="310dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="88dp"
+                android:text=" Full Name"
+                android:textColor="#372c24"
+                app:layout_constraintBottom_toTopOf="@+id/reg_fullname"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/reg_fullname"
+                android:textColor="#c0c0c0"
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                app:layout_constraintBottom_toTopOf="@+id/textView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            <!--  Email Label -->
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="313dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="   Email"
+                android:textColor="#372c24"
+                app:layout_constraintBottom_toTopOf="@+id/reg_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg_fullname" />
+
+            <EditText
+                android:id="@+id/reg_email"
+                android:textColor="#c0c0c0"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                app:layout_constraintBottom_toTopOf="@+id/textView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            <!-- Password Label -->
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="314dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="  Password"
+                android:textColor="#372c24"
+                app:layout_constraintBottom_toTopOf="@+id/reg_password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg_email" />
+
+            <EditText
+                android:id="@+id/reg_password"
+                android:textColor="#c0c0c0"
+                android:layout_width="312dp"
+                android:layout_height="46dp"
+                android:password="true"
+                android:singleLine="true"
+                app:layout_constraintBottom_toTopOf="@+id/textView7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            <!-- Register Button -->
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="194dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="52dp"
+                android:background="@drawable/bttn"
+                android:textColor="#c0c0c0"
+                android:text="Register New Account"
+                app:layout_constraintBottom_toTopOf="@+id/link_to_login"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            <!-- Link to Login Screen -->
+            <TextView
+                android:id="@+id/link_to_login"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:text="ALREADY HAVE AN ACCOUNT! LOGIN HERE"
+                android:textColor="#000066"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnRegister"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="309dp"
+                android:layout_height="26dp"
+                android:text="Character lenght must be greater than 6!"
+                app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reg_password"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </android.support.constraint.ConstraintLayout>
+        <!-- Registration Form Ends -->
+    </RelativeLayout>
+</ScrollView>
