@@ -76,4 +76,52 @@ Certainly! Here are additional questions to consider after building a regression
 20. **Is the model transparent and explainable?**
     - Have you used methods like SHAP values or LIME to explain the model’s predictions?
 
-These additional questions cover a broad range of considerations, ensuring a comprehensive evaluation of your regression model.
+After building a regression model, it's crucial to ask a series of questions to ensure the model is robust, reliable, and adheres to best practices. Here are some key questions:
+
+### Model Fit and Performance
+1. **How well does the model fit the data?**
+   - Have you examined metrics such as R-squared, adjusted R-squared, and the root mean squared error (RMSE)?
+   
+2. **How does the model perform on validation data?**
+   - Have you performed cross-validation or used a separate test set to evaluate the model’s performance?
+
+### Assumptions Checking
+3. **Are the assumptions of the regression model met?**
+   - Linearity: Is the relationship between the predictors and the response linear?
+   - Independence: Are the observations independent of each other?
+   - Homoscedasticity: Are the residuals evenly spread (constant variance)?
+   - Normality: Are the residuals normally distributed?
+
+### Model Diagnostics
+4. **Are there any outliers or influential points affecting the model?**
+   - Have you checked for high leverage points or influential observations using diagnostic plots like Cook’s distance?
+
+5. **How well does the model generalize to new data?**
+   - Have you assessed overfitting and underfitting? What do the training and test errors indicate?
+
+### Feature Importance and Multicollinearity
+6. **Which predictors are most important?**
+   - Have you examined the coefficients and their statistical significance (p-values)?
+   
+7. **Is there multicollinearity among predictors?**
+   - Have you checked variance inflation factors (VIFs) or correlation matrices?
+
+### Practical Considerations
+8. **Is the model interpretable?**
+   - Can the model's coefficients and predictions be easily understood and communicated to stakeholders?
+
+9. **Does the model make logical and practical sense?**
+   - Are the signs and magnitudes of the coefficients consistent with domain knowledge?
+
+### Robustness and Sensitivity
+10. **How robust is the model to changes in the data?**
+    - Have you conducted sensitivity analyses to see how small changes in the data affect the model?
+
+### Implementation and Maintenance
+11. **How will the model be maintained and updated over time?**
+    - What is the plan for monitoring the model’s performance post-deployment?
+
+12. **Are there ethical considerations or biases in the model?**
+    - Have you considered potential biases in the data or model outcomes that could affect fairness or equity?
+
+By systematically addressing these questions, you can ensure that your regression model adheres to best practices and is both reliable and useful for decision-making.
