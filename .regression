@@ -1,0 +1,82 @@
+### Questionnaire for Regression Models
+
+#### 1. Problem Definition
+- Are the project’s objectives and outcomes clearly defined?
+- Are the model’s output and its use cases clearly understood?
+- Have all primary stakeholders been identified?
+- Are the data requirements and requirements documented?
+
+#### 2. Data Collection and Understanding & Data Quality
+- Is there sufficient data available for model training?
+- Is the data clean and reliable?
+- Is the data source from Lucid?
+- Is the data labeled?
+  - If not, can it be labeled effectively?
+- How many features and samples are in the dataset?
+- Are there any missing values or imbalanced classes in the dataset?
+- Is the distribution of the target variable (continuous) adequately studied?
+- Are there any external factors that could affect the data or its distribution?
+
+#### 3. Data Preparation
+- Are data preprocessing steps necessary? (e.g., normalization, encoding categorical variables, handling missing values?)
+- Is feature engineering necessary?
+- Is feature selection necessary?
+- Is data augmentation necessary?
+- Is there a ratio for splitting the data into training, validation, and test sets defined?
+
+#### 4. Model Selection
+- Is the algorithm you are considering suitable for regression tasks? (e.g., linear regression, polynomial regression, support vector regression, neural networks?)
+- Are there preferred algorithms or techniques?
+- What criteria are being used for selecting the model? (e.g., interpretability, complexity, computational cost?)
+- Have different types of regression models been considered? (e.g., linear vs. non-linear, parametric vs. non-parametric?)
+- Are ensemble methods being considered? (e.g., bagging, boosting, stacking?)
+- Have hyperparameters for the models been identified and optimized?
+- How does the model handle outliers?
+- Can the model incorporate feature interactions?
+- Is the model robust to multicollinearity?
+- How does the model deal with heteroscedasticity?
+- Is there a plan for regularization? (e.g., L1, L2, elastic net?)
+- Are assumptions of the model checked and validated? (e.g., linearity, independence of errors, normality of error distribution?)
+- Has the possibility of using dimensionality reduction techniques been explored? (e.g., PCA, LDA?)
+
+#### 5. Train the Model
+- What optimization techniques were used? (e.g., grid search, random search, custom techniques?)
+- Is cross-validation included? (e.g., k-fold, SHOTCE, class-weighted k-fold cross-validation?)
+- Are different configurations of the model evaluated on the test data?
+- Are there different datasets with enough samples?
+- Are there any benchmarks for the model’s performance?
+- Are specific thresholds or benchmarks set for the model performance?
+
+#### 6. Evaluation and Validation
+- How is the model evaluated? (e.g., MSE, RMSE, R-squared, MAE)
+- Are unseen datasets used for evaluating the model?
+- Are the results documented and compared with baseline models or industry benchmarks?
+
+#### 7. Deployment and Monitoring
+- Is there a plan for deploying the model into a production environment?
+- Are there specific deployment requirements?
+- Is there a plan/workflow for model monitoring and maintenance?
+- Are there mechanisms in place for model updates and retraining?
+- Are there mechanisms in place for potential data drift or changes in data distributions?
+
+#### 8. Ethical and Legal Considerations
+- Are there data privacy concerns?
+- Are measures in place to ensure data security?
+- Are there any ethical concerns related to the model’s predictions or the data used?
+- Does the model adhere to relevant legal and regulatory requirements?
+- Are there any biases in the data that could affect the fairness of the model?
+
+#### 9. Documentation and Communication
+- Has the code been well documented with comments and functions following PEP8 standards?
+- Has the document included all steps including data preprocessing steps, model selection process, and evaluation results?
+- Are the stakeholders informed about the model’s development and performance?
+- Has the results and decisions made during the model development process been communicated?
+- Are criteria for model success achieved?
+
+#### 10. Future Work
+- Has the potential for areas of improvement in the current model been captured?
+- Are there plans for incorporating additional data or features in the future?
+- Has there been a model update mechanism with new data?
+- Is there a plan for model iteration based on feedback?
+- Have potential risks and challenges been identified?
+- Are mitigation strategies in place?
