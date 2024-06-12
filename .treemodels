@@ -1,0 +1,110 @@
+### Best Practices Questionnaire for Tree-Based Models
+
+#### Data Preparation
+1. **Data Cleaning and Preprocessing**
+   - Are missing values handled appropriately?
+   - Have categorical variables been encoded correctly? (e.g., one-hot encoding, label encoding)
+   - Are outliers identified and handled?
+   - Has the data been normalized or scaled if necessary?
+
+2. **Feature Engineering**
+   - Are relevant features created through feature engineering?
+   - Are interaction features between variables considered?
+   - Is there a process for reducing dimensionality if needed? (e.g., PCA)
+
+3. **Feature Selection**
+   - Have irrelevant or redundant features been removed?
+   - Are feature selection techniques used to identify the most important features?
+
+4. **Data Splitting**
+   - Is the data split into training, validation, and test sets?
+   - Is stratified sampling used if the data is imbalanced?
+   - Is there a clear ratio for splitting the data (e.g., 70-15-15)?
+
+5. **Data Augmentation**
+   - Is data augmentation necessary and applied appropriately?
+   - Are synthetic data generation techniques used if there is a small dataset?
+
+#### Model Selection
+1. **Model Types**
+   - Have different types of tree-based models been considered? (e.g., decision trees, random forests, gradient boosting, XGBoost, LightGBM, CatBoost)
+   - What criteria are used for selecting the model? (e.g., interpretability, complexity, computational cost)
+
+2. **Hyperparameters**
+   - Are the hyperparameters identified and optimized for each model type? (e.g., max depth, number of trees, learning rate)
+   - Are default hyperparameters evaluated before tuning?
+
+3. **Ensemble Methods**
+   - Are ensemble methods considered and evaluated? (e.g., bagging, boosting)
+   - Is there a plan for combining multiple models to improve performance?
+
+4. **Overfitting and Underfitting**
+   - Are techniques applied to prevent overfitting? (e.g., pruning, setting minimum samples per leaf)
+   - Is there an evaluation of model complexity to avoid underfitting?
+
+5. **Model Assumptions**
+   - Are the assumptions of the chosen models checked and validated?
+   - Is the model robust to multicollinearity and heteroscedasticity?
+
+#### Training the Model
+1. **Optimization Techniques**
+   - What optimization techniques are used for hyperparameter tuning? (e.g., grid search, random search, Bayesian optimization)
+   - Is cross-validation included in the training process?
+
+2. **Cross-Validation**
+   - Is k-fold or stratified k-fold cross-validation used to ensure model robustness?
+   - Are out-of-bag errors used for evaluating ensemble methods?
+
+3. **Model Configurations**
+   - Are different configurations of the model evaluated on the validation set?
+   - Is there a plan for iterative training and evaluation?
+
+4. **Computational Efficiency**
+   - Are computational resources efficiently used during training?
+   - Is parallel processing or distributed computing utilized for large datasets?
+
+#### Evaluation and Validation
+1. **Performance Metrics**
+   - What performance metrics are used to evaluate the model? (e.g., accuracy, precision, recall, F1-score for classification; MSE, RMSE, R-squared for regression)
+   - Are these metrics aligned with the project’s objectives?
+
+2. **Validation Datasets**
+   - Are unseen datasets used for evaluating the model?
+   - Is there a holdout validation set separate from the test set?
+
+3. **Benchmarking**
+   - Are the results compared with baseline models or industry benchmarks?
+   - Are there specific thresholds or benchmarks set for model performance?
+
+4. **Feature Importance**
+   - Is feature importance analyzed and documented?
+   - Are the most important features identified and communicated?
+
+5. **Model Stability**
+   - Is the model’s performance evaluated under different conditions? (e.g., varying sample sizes, different distributions)
+   - Is the model tested for stability and reliability?
+
+#### Deployment
+1. **Deployment Plan**
+   - Is there a clear plan for deploying the model into a production environment?
+   - Are specific deployment requirements identified and documented?
+
+2. **Monitoring and Maintenance**
+   - Is there a plan/workflow for model monitoring and maintenance?
+   - Are there logging and alerting systems in place to monitor the model’s performance in production?
+
+3. **Model Updates**
+   - Are mechanisms in place for model updates and retraining?
+   - Is there a plan for handling data drift and changes in data distributions?
+
+4. **Scalability**
+   - Is the model scalable to handle larger datasets or more requests?
+   - Are there strategies in place to optimize performance under increased load?
+
+5. **Documentation and Communication**
+   - Is the model deployment process well documented?
+   - Are stakeholders informed about the deployment and performance monitoring plans?
+
+6. **Ethical and Legal Compliance**
+   - Does the deployment adhere to relevant legal and regulatory requirements?
+   - Are measures in place to ensure data privacy and security during deployment?
